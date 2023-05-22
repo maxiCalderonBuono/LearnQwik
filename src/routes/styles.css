@@ -1,16 +1,26 @@
 /* THIS FILE IS JUST FOR EXAMPLES, DELETE IT IF YOU DON'T NEED IT */
 
 /* SHELL ---------------------------------------- */
+
+@font-face {
+  font-family: Ruddy;
+  src: url("./fonts/ruddy-bold.otf");
+}
+
 html {
-  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
-    'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
-    'Segoe UI Symbol', 'Noto Color Emoji';
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
 body {
-  background: var(--qwik-dark-background);
-  color: var(--qwik-dark-text);
   overflow-x: hidden;
+  background-image: url("./images/landscape.jpg");
+  background-position: center center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: Ruddy;
 }
 
 /* HEADINGS ------------------------------------- */
@@ -182,7 +192,7 @@ button.button-small {
 .icon:before {
   width: 18px;
   height: 18px;
-  content: '';
+  content: "";
   display: inline-block;
   margin-right: 20px;
   position: relative;
